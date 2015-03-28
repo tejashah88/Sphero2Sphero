@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ff888888">
+
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/btnSelectMaster"
+            android:choiceMode="singleChoice" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select controller"
+        android:id="@+id/btnSelectMaster"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="selectSphero"
+        android:tag="master"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select controlled"
+        android:id="@+id/btnSelectSlave"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="selectSphero"
+        android:tag="slave"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start!"
+        android:id="@+id/btnStart"
+        android:layout_alignBaseline="@+id/btnSelectSlave"
+        android:layout_alignBottom="@+id/btnSelectSlave"
+        android:layout_centerHorizontal="true"
+        android:onClick="startServer"/>
+
+    <view
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="orbotix.view.calibration.CalibrationView"
+        android:id="@+id/calibView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

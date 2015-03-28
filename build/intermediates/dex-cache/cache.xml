@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\libs\RobotLibrary.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="31c82e5e9535de3e1b78f7c14342c13f2cdc59ee">
+        <dex dex="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\build\intermediates\pre-dexed\debug\RobotLibrary-e86f6f1748b02cbbf332f65d535fc5c5e2d737a9.jar" />
+    </item>
+
+</items>

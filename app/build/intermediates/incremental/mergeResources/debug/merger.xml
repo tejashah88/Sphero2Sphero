@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\src\main\res"><file name="main" path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\src\main\res\layout\main.xml" qualifiers="" type="layout"/><file path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Button Drive</string></file><file path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\src\main\res\values\styles.xml" qualifiers=""><style name="ControlButton">
+
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style></file><file name="row_text_view" path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\src\main\res\layout\row_text_view.xml" qualifiers="" type="layout"/></source><source path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\build\generated\res\rs\debug"/><source path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\Tehas_2\AndroidStudioProjects\SpheroController\app\src\debug\res"/></dataSet><mergedItems/></merger>
