@@ -20,12 +20,9 @@ import orbotix.robot.sensor.AttitudeSensor;
 import orbotix.robot.sensor.DeviceSensorsData;
 import orbotix.sphero.ConnectionListener;
 import orbotix.sphero.DiscoveryListener;
-import orbotix.sphero.NonPersistentOptionFlags;
-import orbotix.sphero.PersistentOptionFlags;
 import orbotix.sphero.SensorFlag;
 import orbotix.sphero.SensorListener;
 import orbotix.sphero.Sphero;
-import orbotix.view.calibration.CalibrationCircle;
 
 public class ButtonDriveActivity extends Activity {
     private ListView lstView;
@@ -141,11 +138,6 @@ public class ButtonDriveActivity extends Activity {
     public void driveSlave() {
         pitch = (Math.abs(pitch) < THRESHOLD ? 0 : pitch);
         roll = (Math.abs(roll) < THRESHOLD ? 0 : roll);
-
-        float heading = 0;
-
-        //if (pitch == 0)
-        //    heading = (float) Math.atan(roll/-pitch);
 
         if(pitch < -THRESHOLD) { mRobotSlave.drive(0f, 0.5f); }
         else if(pitch > THRESHOLD) { mRobotSlave.drive(180f, 0.5f); }
